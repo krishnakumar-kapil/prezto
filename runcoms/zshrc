@@ -1,4 +1,4 @@
-#
+#/usr/local/bin
 # Executes commands at the start of an interactive session.
 #
 # Authors:
@@ -11,3 +11,51 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+# Customize to your needs...
+alias vi='/usr/local/bin/vim'
+alias vim='/usr/local/bin/vim'
+
+alias ut='cd ~/Google\ Drive/Files/UT\ Files/'
+alias utfall='cd ~/Google\ Drive/Files/UT\ Files/Fall\ 2017/'
+alias utspring='cd ~/Google\ Drive/Files/UT\ Files/Spring\ 2017/'
+alias projects='cd ~/Google\ Drive/Files/AllPersonalProjects'
+alias newTab='open . -a iterm'
+alias books='cd ~/Google\ Drive/Files/Books'
+alias competitive='cd ~/Documents/AllPersonalProjects/Competitive/'
+# ssh school
+# alias sshut='ssh kapilk@deaths-head-hawkmoth.cs.utexas.edu'
+# alias sshutx='ssh kapilk@deaths-head-hawkmoth.cs.utexas.edu -X'
+alias sshut='ssh kapilk@gilligan.cs.utexas.edu'
+alias sshutx='ssh kapilk@gilligan.cs.utexas.edu -X'
+
+alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+alias matlab="/Applications/MATLAB_R2017b.app/bin/matlab -nodesktop"
+setopt AUTO_CD
+alias utprint="/Users/kapilkrishnakumar/Google\ Drive/Files/AllPersonalProjects/utprint/print.sh"
+alias momentumBackgrounds="/Users/kapilkrishnakumar/Library/Application\ Support/Google/Chrome/Default/Extensions/laookkfknpbbblfpciffpaejjkokdgca/0.92.2_0/backgrounds"
+alias tacc="sshfs kk28695@maverick.tacc.utexas.edu:/work/03858/kk28695/maverick/ ~/dev/maverick"
+alias vimrc='vi ~/.vimrc'
+alias zshrc='vi ~/.zshrc'
+alias python2='/usr/local/bin/python2.7-32'
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# export PATH="/Users/kapilkrishnakumar/anaconda/bin:$PATH"
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+. ~/packages/z/z.sh
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Documents/AllPersonalProjects
+source /usr/local/bin/virtualenvwrapper.sh
+
+export PYTHONDONTWRITEBYTECODE=1
+
+theme-switch () { echo -e "\033]50;SetProfile=$1\a"; export ITERM_PROFILE=$1; }
+
+it2prof() { echo -e "\033]50;SetProfile=$1\a" }
+
+source /usr/local/opt/autoenv/activate.sh
